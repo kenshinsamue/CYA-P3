@@ -1,6 +1,4 @@
-
 # Macros
-
 CC = g++
 OBJ = main.o palindrome_prod.o operacion.o
 

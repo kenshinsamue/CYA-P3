@@ -15,7 +15,7 @@ PalindromeProd::PalindromeProd(int n, char* fichero) {
 }
 void PalindromeProd::CrearProductos() {
   for (int i = PrimerNumero; i <= UltimoNumero; i++) {
-    for (int j = PrimerNumero; j <= UltimoNumero; j++) {
+    for (int j = i; j <= UltimoNumero; j++) {
       if (IsPalondrome(i * j) == true) {
         int r = (i * j);
         Operacion capicua(i, j, r);

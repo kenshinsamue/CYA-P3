@@ -20,12 +20,21 @@ int Operacion::getMultiplo2() { return m2; }
 int Operacion::getCapicua() { return capicua; }
 
 bool operator<(const Operacion &a, const Operacion &b) {
-  return (a.capicua < b.capicua);
+  if(a.capicua <= b.capicua){
+    if (a.m1 == b.m1 && a.m2 == b.m2) {
+      return false;
+    }
+    if (a.m1 == b.m2 && a.m2 == b.m1) {
+      return false;
+    } 
+    return true;
+  }
+  else{return false;}
 }
 bool operator==(const Operacion &a, const Operacion &b) {
-  if (a.capicua != b.capicua) {
-    return false;
-  } else {
+   if (a.capicua != b.capicua) {
+     return false;
+   } else {
     if (a.m1 == b.m1 && a.m2 == b.m2) {
       return true;
     } else {

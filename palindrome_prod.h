@@ -24,14 +24,11 @@ class PalindromeProd {
   bool IsPalondrome(int);   // metodo que recibe un numero y nos devuelve un booleano que nos indicara si es palindromo (true) o no (false)
   void CrearProductos();    // metodo que realiza los productos y encuentra los productos que resultan en numeros palindromos
   void EscribirFichero();   // metodo que escribira las multiplicaciones que resultan en palindromos dentro del fichero especificado
-  
  private:
   int N;                      // N es el numero natural que define la longitud de los multiplicandos
   int PrimerNumero;           // es el primer numero dentro del rango 
   int UltimoNumero;           // ultimo numero del rango 
   set<Operacion> ListaOperaciones;    // set que contiene las operaciones cuyo resultado es un numero capicuo
   fstream Output;             // stream hacia el fichero de salida
-
-
 };
 #endif
